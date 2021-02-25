@@ -1,0 +1,36 @@
+{% extends "main/wrapper.html" %}
+{% block content %}
+{% load static %}
+
+<section class="gallery5 mbr-gallery cid-sq0DaK5LsE" id="gallery5-6">
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-2"><strong>Галлерея страниц</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Фотографии с описанием</h4>
+        </div>
+
+        <div class="row mbr-gallery mt-4">
+            {% for user_data in users_data %}
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div style="height: 250px" class="item-wrapper" data-toggle="modal" data-target="#sq0DwD6R8C-modal">
+                    <img class="w-100" src="/static/uploaded/{{user_data.image}}" onerror="this.src='{% static 'assets/images/sq3.jpg' %}'" data-slide-to="0" data-target="#lb-sq0DwD6R8C">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">
+                    Никнейм - {{user_data.username}}<br>
+                    Фио - {{user_data.fio}}<br>
+                    Город - {{user_data.city}}<br>
+                    Инфо - {{user_data.info}}<br>
+                </h6>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+
+
+{% endblock %}
