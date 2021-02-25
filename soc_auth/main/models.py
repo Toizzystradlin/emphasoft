@@ -9,5 +9,6 @@ class Datauser(models.Model):
     info = models.TextField(blank=True, null=True)
     image = models.ImageField(null=True, blank=True)
 
+
 class Cities(models.Model):
     city = models.CharField(max_length=150)
