@@ -16,7 +16,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Site-with-registr-and-gallery" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1osQSVthoabQFl6fPhDl5PcUosZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,5 +65,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614072858914" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1614250636098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614250636098" />
   </component>
 </project>
