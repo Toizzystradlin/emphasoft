@@ -28,7 +28,7 @@ def data(request):
                                               'user_email': str(request.user.email),
                                               'user_data': user, 'cities': cities})
 
-
+@login_required
 def loaddata(request):
     """Uploads info about user to database"""
     user = Datauser.objects.get(username=request.user.username)
