@@ -16,6 +16,7 @@ def log_out(request):
     logout(request)
     return redirect('/')
 
+
 @login_required
 def data(request):
     """Render info/edit page about user"""
@@ -27,6 +28,7 @@ def data(request):
     return render(request, 'main/data.html', {'user_name': request.user.username,
                                               'user_email': str(request.user.email),
                                               'user_data': user, 'cities': cities})
+
 
 @login_required
 def loaddata(request):
@@ -44,6 +46,7 @@ def loaddata(request):
     return render(request, 'main/data.html', {'user_name': request.user.username,
                                               'user_email': str(request.user.email),
                                               'user_data': user})
+
 
 @login_required
 def catalog(request):
